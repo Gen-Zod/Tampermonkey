@@ -3,10 +3,10 @@
 // @namespace       
 // @version			0.2
 // @description		Adds a star rating to Starbucks mugs, a user-collection-link-icon and the mail addresses get a mailto-Link
-// @homepageURL     https://gist.github.com/Gen-Zod/c6507b8341f3598f4120
-// @supportURL      https://gist.github.com/Gen-Zod/c6507b8341f3598f4120
-// @updateURL       https://gist.github.com/Gen-Zod/c6507b8341f3598f4120/raw/63addfc3989b8f1615b42e3970e06f51b8d8192a/m-blass%2520Rating.user.js
-// @downloadURL     https://gist.github.com/Gen-Zod/c6507b8341f3598f4120/raw/63addfc3989b8f1615b42e3970e06f51b8d8192a/m-blass%2520Rating.user.js
+// @homepageURL     https://github.com/Gen-Zod/Tampermonkey/blob/master/m-blass%20Rating.user.js
+// @supportURL      https://github.com/Gen-Zod/Tampermonkey/blob/master/m-blass%20Rating.user.js
+// @updateURL       https://github.com/Gen-Zod/Tampermonkey/raw/master/m-blass%20Rating.user.js
+// @downloadURL     https://github.com/Gen-Zod/Tampermonkey/raw/master/m-blass%20Rating.user.js
 // @author			Manuel Bissinger
 // @match			http://mugs.m-blass.de/*
 // @grant			none
