@@ -5,10 +5,10 @@
 // @description   Darker Style for Facebook
 // @author        Manuel Bissinger
 // @match         https://www.facebook.com/*
-// @homepageURL   https://github.com/Gen-Zod/Tampermonkey/blob/master/m-blass%20Rating.user.js
-// @supportURL    https://github.com/Gen-Zod/Tampermonkey/blob/master/m-blass%20Rating.user.js
-// @updateURL     https://github.com/Gen-Zod/Tampermonkey/raw/master/m-blass%20Rating.user.js
-// @downloadURL   https://github.com/Gen-Zod/Tampermonkey/raw/master/m-blass%20Rating.user.js
+// @homepageURL   https://github.com/Gen-Zod/Tampermonkey/blob/master/FacebookDarkStyle.user.js
+// @supportURL    https://github.com/Gen-Zod/Tampermonkey/blob/master/FacebookDarkStyle.user.js
+// @updateURL     https://github.com/Gen-Zod/Tampermonkey/raw/master/FacebookDarkStyle.user.js
+// @downloadURL   https://github.com/Gen-Zod/Tampermonkey/raw/master/FacebookDarkStyle.user.js
 // @grant         none
 // @run-at        document-end
 // ==/UserScript==
