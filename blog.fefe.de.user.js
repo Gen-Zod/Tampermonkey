@@ -7,8 +7,9 @@
 // @match        http://blog.fefe.de/*
 // @grant        none
 // @homepageURL  
-// @updateURL    
 // @supportURL   
+// @updateURL    https://github.com/Gen-Zod/Tampermonkey/raw/master/blog.fefe.de.user.js
+// @downloadURL  https://github.com/Gen-Zod/Tampermonkey/raw/master/blog.fefe.de.user.js
 // @run-at       document-end
 // ==/UserScript==
 
