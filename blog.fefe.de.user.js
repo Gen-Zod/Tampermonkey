@@ -6,8 +6,8 @@
 // @author       Manuel Bissinger
 // @match        http://blog.fefe.de/*
 // @grant        none
-// @homepageURL  
-// @supportURL   
+// @homepageURL  https://github.com/Gen-Zod/Tampermonkey/blob/master/blog.fefe.de.user.js
+// @supportURL   https://github.com/Gen-Zod/Tampermonkey/blob/master/blog.fefe.de.user.js
 // @updateURL    https://github.com/Gen-Zod/Tampermonkey/raw/master/blog.fefe.de.user.js
 // @downloadURL  https://github.com/Gen-Zod/Tampermonkey/raw/master/blog.fefe.de.user.js
 // @run-at       document-end
