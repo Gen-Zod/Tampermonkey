@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name            m-blass Starbucks city mug star rating and direct mail
 // @namespace       
-// @version			0.1
-// @description		Adds a star rating to Starbucks mugs and the mail addresses get a mailto-Link
+// @version			0.2
+// @description		Adds a star rating to Starbucks mugs, a user-collection-link-icon and the mail addresses get a mailto-Link
 // @supportURL      https://gist.github.com/Gen-Zod/c6507b8341f3598f4120
 // @updateURL       https://gist.github.com/Gen-Zod/c6507b8341f3598f4120/raw/63addfc3989b8f1615b42e3970e06f51b8d8192a/m-blass%2520Rating.user.js
 // @downloadURL     https://gist.github.com/Gen-Zod/c6507b8341f3598f4120/raw/63addfc3989b8f1615b42e3970e06f51b8d8192a/m-blass%2520Rating.user.js
