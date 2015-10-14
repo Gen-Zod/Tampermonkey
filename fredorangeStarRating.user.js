@@ -2,7 +2,7 @@
 // @name            fredorange Starbucks Mug Star Rating
 // @namespace       
 // @version			0.1
-// @description		Adds a star rating to Starbucks mugs
+// @description		Actually doesn't work because of CSRF issue!!! (Adds a star rating to Starbucks mugs)
 // @homepageURL     https://github.com/Gen-Zod/Tampermonkey/blob/master/fredorangeStarRating.user.js
 // @supportURL      https://github.com/Gen-Zod/Tampermonkey/blob/master/fredorangeStarRating.user.js
 // @updateURL       https://github.com/Gen-Zod/Tampermonkey/raw/master/fredorangeStarRating.user.js
