@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ebay Starbucks mug ranking
 // @namespace    
-// @version      0.1
+// @version      0.2
 // @description  Adds a Star ranking to rare or uncommon Starbucks mugs on ebay. 
 // @author       Manuel Bissinger
 // @match        http://www.ebay.de/*
@@ -53,8 +53,8 @@ $(document).ready(function(){
                     v_ratingString = ""
             }
             // iterate through each city
-            StopCitySearch: for(j=0; j<a_rateCities[i].length; j++) {
-                v_cityRegex = new RegExp('^.*[city|mug|becher|tasse]*.*' + a_rateCities[i][j] + '.*[city|mug|becher|tasse]*.*$', 'i');
+            StopCitySearch: for(var v_city in a_rateCities[i]) {
+                v_cityRegex = new RegExp('^.*[city|mug|becher|tasse]*.*' + v_city + '.*[city|mug|becher|tasse]*.*$', 'i');
                 if($(this).text().match(v_cityRegex)!=null) {
                     //Add star icons to city
                     $(this).prepend('<span title="' + v_ratingString + '">' + v_ratingStar.repeat(i) + '</span> ');
