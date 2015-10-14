@@ -95,8 +95,8 @@ $(document).ready(function(){
                     v_ratingString = ""
             }
             // iterate through each city
-            StopCitySearch: for(j=0; j<a_rateCities[i].length; j++) {
-                v_cityRegex = '^' + a_rateCities[i][j] + '\\s*$'; // RegEx to find city in text
+            StopCitySearch: for(var v_city in a_rateCities[i]) {
+                v_cityRegex = '^' + v_city + '\\s*$'; // RegEx to find city in text
                 if($(this).text().match(v_cityRegex)!=null) {
                     //Add star icons to city
                     $(this).append(' <span title="' + v_ratingString + '">' + v_ratingStar.repeat(k) + '</span>');
