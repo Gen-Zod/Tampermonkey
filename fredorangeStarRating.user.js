@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            fredorange Starbucks Mug Star Rating
 // @namespace       
-// @version			0.2
+// @version			0.3
 // @description		Adds a star rating to Starbucks mugs (Icon 08 Series) // Actually doesn't work perfectly because of CSRF issue!!! Workaround: Static mug lists.
 // @homepageURL     https://github.com/Gen-Zod/Tampermonkey/blob/master/fredorangeStarRating.user.js
 // @supportURL      https://github.com/Gen-Zod/Tampermonkey/blob/master/fredorangeStarRating.user.js
@@ -91,8 +91,8 @@ $(document).ready(function(){
                     v_ratingString = ""
             }
             // iterate through each city
-            StopCitySearch: for(j=0; j<a_rateCities[i].length; j++) {
-                v_cityRegex = '^' + a_rateCities[i][j] + '\\s*$'; // RegEx to find city in text
+            StopCitySearch: for(var city in a_rateCities[i]) {
+                v_cityRegex = '^' + city + '\\s*$'; // RegEx to find city in text
                 if($(this).text().match(v_cityRegex)!=null) {
                     //Add star icons to city
                     $(this).append(' <span title="' + v_ratingString + '">' + v_ratingStar.repeat(i) + '</span>');
