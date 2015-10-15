@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            fredorange Starbucks Mug Star Rating
 // @namespace       
-// @version			0.4
+// @version			0.5
 // @description		Adds a star rating to Starbucks mugs (Icon 08 Series) // Actually doesn't work perfectly because of CSRF issue!!! Workaround: Static mug lists.
 // @homepageURL     https://github.com/r4v3n50u1/Tampermonkey/blob/master/fredorangeStarRating.user.js
 // @supportURL      https://github.com/r4v3n50u1/Tampermonkey/blob/master/fredorangeStarRating.user.js
@@ -9,6 +9,7 @@
 // @downloadURL     https://github.com/r4v3n50u1/Tampermonkey/raw/master/fredorangeStarRating.user.js
 // @author			r4v3n50u1
 // @match			http://fredorange.com/*
+// @exclude         http://fredorange.com/*do=ask*
 // @grant			none
 // @require			http://code.jquery.com/jquery-latest.js
 // @run-at          document-end
