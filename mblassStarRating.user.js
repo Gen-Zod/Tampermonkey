@@ -3,11 +3,11 @@
 // @namespace       
 // @version			0.3
 // @description		Adds a star rating to Starbucks mugs, a user-collection-link-icon and the mail addresses get a mailto-Link
-// @homepageURL     https://github.com/Gen-Zod/Tampermonkey/blob/master/m-blass%20Rating.user.js
-// @supportURL      https://github.com/Gen-Zod/Tampermonkey/blob/master/m-blass%20Rating.user.js
-// @updateURL       https://github.com/Gen-Zod/Tampermonkey/raw/master/m-blass%20Rating.user.js
-// @downloadURL     https://github.com/Gen-Zod/Tampermonkey/raw/master/m-blass%20Rating.user.js
-// @author			Manuel Bissinger
+// @homepageURL     https://github.com/r4v3n50u1/Tampermonkey/blob/master/mblassStarRating.user.js
+// @supportURL      https://github.com/r4v3n50u1/Tampermonkey/blob/master/mblassStarRating.user.js
+// @updateURL       https://github.com/r4v3n50u1/Tampermonkey/raw/master/mblassStarRating.user.js
+// @downloadURL     https://github.com/r4v3n50u1/Tampermonkey/raw/master/mblassStarRating.user.js
+// @author			r4v3n50u1
 // @match			http://mugs.m-blass.de/*
 // @grant			none
 // @require			http://code.jquery.com/jquery-latest.js
@@ -75,7 +75,7 @@ $(document).ready(function(){
         }
 
         // iterate through the city arrays
-        for(i=0; i<4; i++) {
+        StopCitySearch: for(i=0; i<4; i++) {
             var k = i+1;
             // Translate ranking number to string (german and english)
             switch(k) {
@@ -95,9 +95,9 @@ $(document).ready(function(){
                     v_ratingString = ""
             }
             // iterate through each city
-            StopCitySearch: for(var v_city in a_rateCities[i]) {
+            for(var v_city of a_rateCities[i]) {
                 v_cityRegex = '^' + v_city + '\\s*$'; // RegEx to find city in text
-                if($(this).text().match(v_cityRegex)!=null) {
+                if(v_tdString.match(v_cityRegex)!==null) {
                     //Add star icons to city
                     $(this).append(' <span title="' + v_ratingString + '">' + v_ratingStar.repeat(k) + '</span>');
                     break StopCitySearch;
