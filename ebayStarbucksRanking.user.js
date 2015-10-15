@@ -1,16 +1,17 @@
 // ==UserScript==
 // @name         ebay Starbucks mug ranking
 // @namespace    
-// @version      0.2
+// @version      0.3
 // @description  Adds a Star ranking to rare or uncommon Starbucks mugs on ebay. 
-// @author       Manuel Bissinger
+// @author       r4v3n50u1
 // @match        http://www.ebay.de/*
-// @homepageURL   https://github.com/Gen-Zod/Tampermonkey/blob/master/ebayStarbucksRanking.user.js
-// @supportURL    https://github.com/Gen-Zod/Tampermonkey/blob/master/ebayStarbucksRanking.user.js
-// @updateURL     https://github.com/Gen-Zod/Tampermonkey/raw/master/ebayStarbucksRanking.user.js
-// @downloadURL   https://github.com/Gen-Zod/Tampermonkey/raw/master/ebayStarbucksRanking.user.js
+// @homepageURL   https://github.com/r4v3n50u1/Tampermonkey/blob/master/ebayStarbucksRanking.user.js
+// @supportURL    https://github.com/r4v3n50u1/Tampermonkey/blob/master/ebayStarbucksRanking.user.js
+// @updateURL     https://github.com/r4v3n50u1/Tampermonkey/raw/master/ebayStarbucksRanking.user.js
+// @downloadURL   https://github.com/r4v3n50u1/Tampermonkey/raw/master/ebayStarbucksRanking.user.js
 // @contributor   http://mugs.m-blass.de/htf.php
 // @grant        none
+// @require			http://code.jquery.com/jquery-latest.js
 // ==/UserScript==
 
 // add function to repeat string num times
@@ -34,7 +35,7 @@ $(document).ready(function(){
     
     $('h3.lvtitle>a.vip').each(function() {
         // iterate through the city arrays
-        for(i=1; i<a_rateCities.length; i++) {
+        StopCitySearch: for(i=1; i<a_rateCities.length; i++) {
             // Translate ranking number to string (german and english)
             switch(i) {
                 case 1:
@@ -53,8 +54,8 @@ $(document).ready(function(){
                     v_ratingString = ""
             }
             // iterate through each city
-            StopCitySearch: for(var v_city in a_rateCities[i]) {
-                v_cityRegex = new RegExp('^.*[city|mug|becher|tasse]*.*' + v_city + '.*[city|mug|becher|tasse]*.*$', 'i');
+            for(var v_city of a_rateCities[i]) {
+                v_cityRegex = new RegExp('^.*[city|mug|becher|tasse|starbucks]*.*' + v_city + '.*[city|mug|becher|tasse|starbucks]*.*$', 'i');
                 if($(this).text().match(v_cityRegex)!=null) {
                     //Add star icons to city
                     $(this).prepend('<span title="' + v_ratingString + '">' + v_ratingStar.repeat(i) + '</span> ');
