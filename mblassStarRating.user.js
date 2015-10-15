@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            m-blass Starbucks city mug star rating and direct mail
 // @namespace       
-// @version			0.3
+// @version			0.4
 // @description		Adds a star rating to Starbucks mugs, a user-collection-link-icon and the mail addresses get a mailto-Link
 // @homepageURL     https://github.com/r4v3n50u1/Tampermonkey/blob/master/mblassStarRating.user.js
 // @supportURL      https://github.com/r4v3n50u1/Tampermonkey/blob/master/mblassStarRating.user.js
