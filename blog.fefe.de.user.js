@@ -3,13 +3,13 @@
 // @namespace    http://your.homepage/
 // @version      0.1
 // @description  Dark Style for http://blog.fefe.de
-// @author       Manuel Bissinger
+// @author       r4v3n50u1
 // @match        http://blog.fefe.de/*
 // @grant        none
-// @homepageURL  https://github.com/Gen-Zod/Tampermonkey/blob/master/blog.fefe.de.user.js
-// @supportURL   https://github.com/Gen-Zod/Tampermonkey/blob/master/blog.fefe.de.user.js
-// @updateURL    https://github.com/Gen-Zod/Tampermonkey/raw/master/blog.fefe.de.user.js
-// @downloadURL  https://github.com/Gen-Zod/Tampermonkey/raw/master/blog.fefe.de.user.js
+// @homepageURL  https://github.com/r4v3n50u1/Tampermonkey/blob/master/blog.fefe.de.user.js
+// @supportURL   https://github.com/r4v3n50u1/Tampermonkey/blob/master/blog.fefe.de.user.js
+// @updateURL    https://github.com/r4v3n50u1/Tampermonkey/raw/master/blog.fefe.de.user.js
+// @downloadURL  https://github.com/r4v3n50u1/Tampermonkey/raw/master/blog.fefe.de.user.js
 // @run-at       document-end
 // ==/UserScript==
 
