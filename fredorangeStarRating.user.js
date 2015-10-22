@@ -84,7 +84,7 @@ $(document).ready(function() {
                     v_ratingString = "";
             }
             for(var v_city of a_rateCities[i]) { // iterate through each city
-                var v_cityRegex = "^" + v_city + ".*$"; // RegEx to find city in text
+                var v_cityRegex = "^" + v_city + "\\s{1}.*$"; // RegEx to find city in text
                 if(v_mugString.match(v_cityRegex)!==null) {
                     $(this).prepend('<span title="' + v_ratingString + '">' + v_ratingStar.repeat(i) + '</span> '); //Add star icons to city
                     break CityLoop;
