@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Dark Style for http://blog.fefe.de
 // @author       r4v3n50u1
-// @match        http://blog.fefe.de/*
+// @match        https?://blog.fefe.de/*
 // @grant        none
 // @homepageURL  https://github.com/r4v3n50u1/Tampermonkey/blob/master/blog.fefe.de.user.js
 // @supportURL   https://github.com/r4v3n50u1/Tampermonkey/blob/master/blog.fefe.de.user.js
