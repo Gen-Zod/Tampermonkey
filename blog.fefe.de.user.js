@@ -1,7 +1,6 @@
 // ==UserScript==
 // @name         blog.fefe.de
-// @namespace    http://your.homepage/
-// @version      0.1
+// @version      0.2
 // @description  Dark Style for http://blog.fefe.de
 // @author       r4v3n50u1
 // @match        https?://blog.fefe.de/*
