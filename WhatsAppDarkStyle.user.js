@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WhatsApp Dark Style
 // @namespace    
-// @version      0.1
+// @version      0.2
 // @description  Darker Style for WhatsApp website
 // @author       Manuel Bissinger
 // @match        https://web.whatsapp.com/
@@ -29,8 +29,9 @@ function addGlobalHTML(element,attr,val) {
     elem.setAttributeNode(att);
 }
 
-addGlobalStyle('.app-wrapper { background-color: #222 !important; }');
-addGlobalStyle('.app-wrapper::before { background-color: #111 !important; }');
+addGlobalStyle('.app-wrapper { background-color: #111 !important; }');
+addGlobalStyle('.app-wrapper::before { background-color: #000 !important; }');
 addGlobalStyle('.drawer-header { background-color: #069 !important; }');
-addGlobalStyle('.pane-chat-body { background-color: #575757 !important; }');
+addGlobalStyle('.pane-header { background-color: #222 !important; }');
+addGlobalStyle('.pane-chat-body { background-color: #222 !important; }');
 //addGlobalHTML('.input-search','class','autofocus');
