@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         WhatsApp Dark Style
 // @namespace    
-// @version      0.2.1
+// @version      0.2.2
 // @description  Darker Style for WhatsApp website
 // @author       Manuel Bissinger
 // @match        https://web.whatsapp.com/
-// @homepageURL   https://github.com/Gen-Zod/Tampermonkey/blob/master/WhatsAppDarkStyle.user.js
-// @supportURL    https://github.com/Gen-Zod/Tampermonkey/blob/master/WhatsAppDarkStyle.user.js
-// @updateURL     https://github.com/Gen-Zod/Tampermonkey/raw/master/WhatsAppDarkStyle.user.js
-// @downloadURL   https://github.com/Gen-Zod/Tampermonkey/raw/master/WhatsAppDarkStyle.user.js
+// @homepageURL   https://github.com/r4v3n50u1/Tampermonkey/blob/master/WhatsAppDarkStyle.user.js
+// @supportURL    https://github.com/r4v3n50u1/Tampermonkey/blob/master/WhatsAppDarkStyle.user.js
+// @updateURL     https://github.com/r4v3n50u1/Tampermonkey/raw/master/WhatsAppDarkStyle.user.js
+// @downloadURL   https://github.com/r4v3n50u1/Tampermonkey/raw/master/WhatsAppDarkStyle.user.js
 // @grant         none
 // @run-at        document-end
 // ==/UserScript==
