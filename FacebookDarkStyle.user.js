@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name          Facebook Dark Style
 // @namespace     
-// @version       0.1
+// @version       0.1.1
 // @description   Darker Style for Facebook
 // @author        Manuel Bissinger
 // @match         https://www.facebook.com/*
-// @homepageURL   https://github.com/Gen-Zod/Tampermonkey/blob/master/FacebookDarkStyle.user.js
-// @supportURL    https://github.com/Gen-Zod/Tampermonkey/blob/master/FacebookDarkStyle.user.js
-// @updateURL     https://github.com/Gen-Zod/Tampermonkey/raw/master/FacebookDarkStyle.user.js
-// @downloadURL   https://github.com/Gen-Zod/Tampermonkey/raw/master/FacebookDarkStyle.user.js
+// @homepageURL   https://github.com/r4v3n50u1/Tampermonkey/blob/master/FacebookDarkStyle.user.js
+// @supportURL    https://github.com/r4v3n50u1/Tampermonkey/blob/master/FacebookDarkStyle.user.js
+// @updateURL     https://github.com/r4v3n50u1/Tampermonkey/raw/master/FacebookDarkStyle.user.js
+// @downloadURL   https://github.com/r4v3n50u1/Tampermonkey/raw/master/FacebookDarkStyle.user.js
 // @grant         none
 // @run-at        document-end
 // ==/UserScript==
@@ -23,6 +23,5 @@ function addGlobalStyle(css) {
     head.appendChild(style);
 }
 
-addGlobalStyle('._5vb_, ._5vb_ #contentCol { background-color: #333 !important; }');
-addGlobalStyle('._5vb_.hasLeftCol #leftCol { background-color: #eee !important; }');
+addGlobalStyle('body { background-color: #111; }');
 addGlobalStyle('#blueBarNAXAnchor, .titlebar { background-color: black !important; background-image: none !important; border: thin solid black !important;}');
