@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Parship Message Box Height
 // @namespace    
-// @version      0.1
+// @version      0.2
 // @description  Increases the height of the message box at Parship
 // @author       Manuel Bissinger
 // @match        https://www.parship.de/messaging/writemessage/text?*
@@ -14,4 +14,4 @@
 // @run-at        document-end
 // ==/UserScript==
 
-$('#ps_writeMessage').height(35em);
+$('#ps_writeMessage').css('height', '35em');
