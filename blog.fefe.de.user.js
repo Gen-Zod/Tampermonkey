@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         blog.fefe.de
-// @version      0.3
+// @version      0.3.1
 // @description  Dark Style for http://blog.fefe.de
 // @author       r4v3n50u1
 // @match        http*://blog.fefe.de/*
@@ -26,6 +26,15 @@ $('a').css({
 });
 $('h2>a').css({
     "color": "#fff !important"
+});
+$('li').css({
+    "line-height": "1.5em",
+    "background-color": "#333",
+    "margin": "2px",
+    "border-radius": "5px",
+    "border": "solid thin black",
+    "padding": "10px 15px",
+    "list-style": "none"
 });
 $('li>p').css({
     "line-height": "1.5em",
