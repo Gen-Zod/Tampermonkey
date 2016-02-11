@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         blog.fefe.de
-// @version      0.3.1
+// @version      0.3.2
 // @description  Dark Style for http://blog.fefe.de
 // @author       r4v3n50u1
 // @match        http*://blog.fefe.de/*
@@ -12,6 +12,8 @@
 // @require			http://code.jquery.com/jquery-latest.js
 // @run-at       document-end
 // ==/UserScript==
+
+$('body>ul').children('li').children('a:first-child').html('<img src="http://www.iconsdb.com/icons/download/white/link-7-16.png" />');
 
 $('body').css({
     "background-color": "#222",
@@ -40,6 +42,7 @@ $('li>p').css({
     "line-height": "1.5em",
     "margin-left": "1.5em"
 });
+
 /*
 function addGlobalStyle(css) {
     var head, style;
