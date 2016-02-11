@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         blog.fefe.de
-// @version      0.3.3
+// @version      0.3.3.1
 // @description  Dark Style for http://blog.fefe.de
 // @author       r4v3n50u1
 // @match        http*://blog.fefe.de/*
@@ -17,7 +17,7 @@
 $('body>ul').children('li').children('a:first-child').html('<img src="http://www.iconsdb.com/icons/download/white/link-7-16.png" class="permanentLink" />');
 //style class "permanentLink"
 $('.permanentLink').css({
-    "padding": "5px 5px 0 0";
+    "padding": "5px 5px 0 0"
 });
 
 $('body').css({
