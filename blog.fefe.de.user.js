@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         blog.fefe.de
-// @version      0.3.4
+// @version      0.3.5
 // @description  Dark Style for http://blog.fefe.de
 // @author       r4v3n50u1
 // @match        http*://blog.fefe.de/*
@@ -30,7 +30,7 @@ $('body').css({
 });
 $('a').css({
     "color": "#eee"
-});
+}).attr("target", "_blank");
 $('h2>a').css({
     "color": "#fff !important"
 });
