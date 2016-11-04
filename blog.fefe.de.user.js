@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         blog.fefe.de
-// @version      0.3.3.1
+// @version      0.3.4
 // @description  Dark Style for http://blog.fefe.de
 // @author       r4v3n50u1
 // @match        http*://blog.fefe.de/*
@@ -14,7 +14,7 @@
 // ==/UserScript==
 
 //add link icon and create class "permanentLink" for later use
-$('body>ul').children('li').children('a:first-child').html('<img src="http://www.iconsdb.com/icons/download/white/link-7-16.png" class="permanentLink" />');
+$('body>ul').children('li').children('a:first-child').html('<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGUlEQVQ4jY2SsUoDQRRFz4SwWFgEhYApYgghWFhY+AX+nN8QREKqIGrhD9gIopVYSQSLlBJD/IF4LHzCstkk+2CY2blz7nvzZqFCqF11rE5jjNR2FRa1rc5djU+1U6vgsRPjBjgEDmLdBM6rVpGp+e89danO6xugPnAEfAFPKaW8/LMpW199KNz3Td0NvaYOY/+2CJ+osxCn6p36EXuNgAehL6LKUnioZrmMWQl8ug6+VGuFyurqxTq4Wwarz+okqpmUwnHwKsRRPrP6Umjkq3pcbHpS50AD2E8pfecMMuAMaAHvwGNKafX5/PtNl2qjeO+VwyVRA+5jHqhNtaWOgYXa2+qg9nJNzMdC7VSp4t/kOoxmsd6eHfgFHmacfPzYmYQAAAAASUVORK5CYII=" class="permanentLink" />');
 //style class "permanentLink"
 $('.permanentLink').css({
     "padding": "5px 5px 0 0"
@@ -47,21 +47,3 @@ $('li>p').css({
     "line-height": "1.5em",
     "margin-left": "1.5em"
 });
-
-/*
-function addGlobalStyle(css) {
-    var head, style;
-    head = document.getElementsByTagName('head')[0];
-    if (!head) { return; }
-    style = document.createElement('style');
-    style.type = 'text/css';
-    style.innerHTML = css;
-    head.appendChild(style);
-}
-
-addGlobalStyle('body { background-color: #222; font-family: sans-serif; font-size: medium; color: #eee; width: 960px; margin: 30px 25%; }');
-addGlobalStyle('a { color: #eee; }');
-addGlobalStyle('h2>a { color: #fff !important; }');
-addGlobalStyle('li { line-height: 1.5em; background-color: #333; margin: 2px; border-radius: 5px; border: solid thin black; padding: 10px 15px; list-style: none; }');
-addGlobalStyle('li>p { line-height: 1.5em; margin-left: 1.5em; }');
-*/
